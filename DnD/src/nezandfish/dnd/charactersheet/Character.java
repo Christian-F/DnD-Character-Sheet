@@ -3,9 +3,13 @@ package nezandfish.dnd.charactersheet;
 public class Character {
 	
 	//Huge Variable Block
+	
+	//Info
 	String Name, Alignment, Class, Deity, Homeland, Race, Gender,
 		Hair, Eyes, Size;
 	int Level, Exp, Age, Height, Weight;
+	
+	//Stats
 	String StrScore, StrModifier;
 	String DexScore, DexModifier;
 	String ConScore, ConModifier;
@@ -18,7 +22,9 @@ public class Character {
 	String SpdFlyManeuverability;
 	int Initiative;
 	String ArmorClass, TouchArmorClass, FlatFootedArmorClass;
-	int BaseAtckBonus, SpellResistance;
+	//Armor class calculators
+	int ArmorBonus, ShieldBonus, SizeModifier, NaturalArmor, DeflectionModifier;
+	int BaseAtkBonus, SpellResistance;
 	
 	//Character Constructor
 	public Character(String name, String charClass){
